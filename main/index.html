@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <h1>tote</h1>
+    <p>
+    <form>
+      <details>
+        <summary>configuration</summary>
+        <fieldset>
+          <label>storage</label> <span> &ndash; option explaining thing</span>
+          <div>
+            <input type="radio" id="storage-1" name="storage" value="local" checked="checked" />
+            <label for="storage-1">local</label>
+            <input type="radio" id="storage-2" name="storage" value="gist" disabled />
+            <label for="storage-2">gist</label>
+            <input type="radio" id="storage-3" name="storage" value="s3" disabled />
+            <label for="storage-3">s3</label>
+          </div>
+        </fieldset>
+      </details>
+    </form>
+    </p>
+    <p>
+    <form>
+      <p>
+      <details open>
+        <summary>headers</summary>
+        <fieldset>
+          <label for="datetime">date &amp; time</label><br />
+          <input type="text" id="date" value="" /><br />
+          <label for="useragent">user agent</label><br />
+          <input type="text" id="useragent" value="" />
+        </fieldset>
+      </details>
+      </p>
+      <input id="entry" placeholder="what're your thoughts?" />
+    </form>
+    </p>
+    <p>
+    <textarea id="file" rows=60></textarea>
+    </p>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
